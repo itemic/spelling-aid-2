@@ -1,0 +1,22 @@
+# README
+
+VOX Spelling is an application for practicing your spelling.
+
+## REQUIREMENTS
+If you are using a Linux distribution, ensure you have Festival installed.
+
+In the same directory where VOXSpelling.jar is, you will need a text file “wordlist” with a word on each line in the same directory as the jarfile. If you don’t have the wordlist, the app may behave differently and might not run (although it should just tell you that there are no words available).
+
+## HOW TO RUN
+Ensure the jarfile is executable with chmod +x VOXSpelling.jar
+
+Execute the jarfile with java -jar VOXSpelling.jar
+(Note: double clicking might not work if it uses OpenJDK launcher).
+
+## EXTRA NOTES
+A hidden directory “.statistics” will be created in the same directory as VOXSpelling is in. If you don’t want to use VOXSpelling anymore, make sure to remove the directory and all its files.
+
+Enjoy VOXSpelling.
+
+- Terran Kroft
+tkro003
