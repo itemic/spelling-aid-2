@@ -197,6 +197,7 @@ public class FileHandler {
 				if (!w.equals("%Level " + nextLevel)) {
 					//it's not the next level comment
 					levelWords.add(w);
+					System.out.println("word: " + w);
 				} else {
 					break;
 				}

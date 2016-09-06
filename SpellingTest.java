@@ -14,13 +14,17 @@ public class SpellingTest {
 	private boolean isFail = false;
 //	private FileHandler fh = new FileHandler();
 
-	
-	public SpellingTest(File wordlist, int words) {
+	public SpellingTest(File wordlist, int words, int level) {
 		wordCount = words;
 		FileHandler fh = new FileHandler();
-//		allWords = fh.readWords(wordlist);
-		allWords = fh.readLevel(wordlist, 1);
+		allWords = fh.readLevel(wordlist, level);
 	}
+	
+	public SpellingTest(File wordlist, int words) {
+		this(wordlist, words, 1);
+	}
+	
+
 	
 	public void spellingTest(String userInput, ArrayList<String> words, int gameType) {
 		//gameType is currently just a static int

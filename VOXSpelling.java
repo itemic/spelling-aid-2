@@ -28,7 +28,7 @@ public class VOXSpelling extends JFrame implements ActionListener {
 
 		super("VOX Spelling");
 
-		setSize(500, 400);
+		setSize(600, 300);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		add(sidebar, BorderLayout.EAST);
 		add(mainBar, BorderLayout.CENTER);
