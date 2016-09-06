@@ -26,7 +26,7 @@ public class Festival {
 			//Mac uses the say command
 			cmd = "say " + speak;
 		} else {
-			//Linux uses festial. This doesn't work on Windows just yet.
+			//Linux uses festival. This doesn't work on Windows just yet.
 			cmd = "echo " + speak + " | festival --tts";
 		}
 		pb = new ProcessBuilder("/bin/bash", "-c", cmd);
