@@ -180,4 +180,31 @@ public class FileHandler {
 		return allWords;
 	}
 	
+	public ArrayList<String> readLevel(File wordList, int level) {
+		ArrayList<String> levelWords = new ArrayList<>();
+		BufferedReader br = null;
+		String w;
+		try {
+			br = new BufferedReader(new FileReader(wordList));
+			while ((w = br.readLine()) != null) {
+				if (w.equals("%Level " + level)) {
+					//we found the specified level!
+					break;
+				}
+			}
+			while ((w = br.readLine()) != null) {
+				int nextLevel = level + 1;
+				if (!w.equals("%Level " + nextLevel)) {
+					//it's not the next level comment
+					levelWords.add(w);
+				} else {
+					break;
+				}
+			}
+		} catch (IOException e) {
+			
+		}
+		return levelWords;
+	}
+	
 }

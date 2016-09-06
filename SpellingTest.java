@@ -18,7 +18,8 @@ public class SpellingTest {
 	public SpellingTest(File wordlist, int words) {
 		wordCount = words;
 		FileHandler fh = new FileHandler();
-		allWords = fh.readWords(wordlist);
+//		allWords = fh.readWords(wordlist);
+		allWords = fh.readLevel(wordlist, 1);
 	}
 	
 	public void spellingTest(String userInput, ArrayList<String> words, int gameType) {
